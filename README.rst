@@ -19,7 +19,7 @@ Paso 1
 Paso 2
   Descargue e instale `Vagrant <https://www.vagrantup.com/downloads.html>`_.
 
-  .. admonition:: **Pasos exclusivos para Windows**
+  Pasos exclusivos para Microsoft Windows:
 
       Paso 2.1
         Abra la busqueda de Windows, escriba la palabra **variables** y escoja
@@ -51,7 +51,7 @@ Paso 3
   Esta será su carpeta de trabajo.
 
 Paso 4
-  Paso exclusivo para Microsoft Windows. 
+  Pasos exclusivos para Microsoft Windows:
 
     Paso 4.1
       Digite la tecla de windows + x. Luego escoja la opción **Aplicaciones y características**.
