@@ -50,6 +50,10 @@ Paso 3
   principal del repositorio encontrará el botón **Clone or Download**.
   Esta será su carpeta de trabajo.
 
+  .. image:: assets/fig-01.jpg
+    :width: 400
+    :alt: Alternative text
+
 Paso 4
   Pasos exclusivos para Microsoft Windows:
 
