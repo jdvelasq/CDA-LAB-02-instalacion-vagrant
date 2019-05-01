@@ -2,8 +2,13 @@ LAB 02: Creación de una máquina virtual usando Vagrant
 =============================================================
 
 En esta práctica se realizará la configuración de un ambiente de
-programación portable que garantice una ejeución idéntica en todos los
+programación portable que garantice una ejecución idéntica en todos los
 computadores independientemente del tipo de sistema operativo y su versión.
+
+**Advertencia**. Este laboratorio debe ser realizado por fuera del campus
+de la Universidad, ya que el proxy bloquea algunos de los sitios requeridos 
+para la instalación de la máquina virtual.
+
 
 Configuración
 -------------
@@ -41,47 +46,39 @@ Paso 2
 
 
 Paso 3
-  Cree un directorio de trabajo en su computador. En este
-  tutorial se hace referencia a este directorio como `workdir`.
+  Haga una copia de este repositorio en su disco duro. En la página
+  principal del repositorio encontrará el botón **Clone or Download**.
+  Esta será su carpeta de trabajo.
 
 Paso 4
-  Descargue el archivo :download:`Vagrant <../../Vagrantfile>` y
-  guardelo en `workdir`.
+  Paso exclusivo para Microsoft Windows. 
 
-  *El archivo `Vagrant` contiene la información de la máquina
-     virtual usada.*
-
-Paso 5
-  Cree una carpeta llamada `manifests` en la raíz de `workdir`.
-  Descargue el archivo :download:`default.pp <../../manifests/default.pp>`
-  en la carpeta `manifests`.
-
-  .. admonition:: **Pasos exclusivos para Windows**
-
-    Paso 5.1
+    Paso 4.1
       Digite la tecla de windows + x. Luego escoja la opción **Aplicaciones y características**.
 
-    Paso 5.2
+    Paso 4.2
       En el costado superior derecho, escoja la opción **Programas y características**. Se abrirá una nueva ventana emergente.
 
-    Paso 5.3
-      Haga click en la opción **Activar o Desactivar las características de Windows** ubicada en la parte superior izquierda, busque en la       lista la aplicación **Hyper V** y desmarquela.
+    Paso 4.3
+      Haga click en la opción **Activar o Desactivar las características de Windows** ubicada en la 
+      parte superior izquierda, busque en la lista la aplicación **Hyper V** y desmárquela.
 
-Paso 6
+Paso 5
   Proceda con el encendido de la máquina de acuerdo a su sistema operativo.
 
 
 Encendido, apagado y borrado de la máquina virtual
 --------------------------------------------------
 
-Los comandos presentados a continuación se ejecutan en la interfaz de línea
+En esta sección se describe el uso de la máquina virtual. Los comandos 
+presentados a continuación se ejecutan en la interfaz de línea
 de comandos (CLI) o prompt del sistema o Terminal. Para acceder al terminal
 de comandos haga lo siguiente:
 
 * En Mac OS X, digite `Cmd + Space` para acceder a Spotligth, digite
   `terminal` y finalmente `Enter`.
 * En Ubuntu, digite  `Ctrl + Alt + T`.
-* En Windows, abra ejecutar y digite `cmd`.
+* En Windows, abra **ejecutar** y digite `cmd`.
 
 
 Encendido
@@ -96,13 +93,13 @@ Encendido
 
 
 Apertura de una sesión
-  Después de encender la VM,  conéctese a la ella con
+  Después de encender la VM,  conéctese a ella con
 
   .. code-block:: bash
 
     vagrant ssh
 
-  como resulado, el prompt cambiará a
+  como resultado, el prompt cambiará a
 
   .. code-block:: bash
 
@@ -139,7 +136,9 @@ Carpeta compartida
 
     cd /vagrant
 
-  .. important:: Los directorios `workidir` y `/vagrant` comparten la misma ubicación física en su disco duro. Los cambios que realice en un directorio se refrejarán en el otro.
+  .. important:: La carpeta donde clono este  repositorio y `/vagrant` comparten 
+     la misma ubicación física en su disco duro. Los cambios que realice en un directorio 
+     en un sistema operativo se refrejarán en el otro sistema operativo.
 
 Cierre de sesión y retorno a la máquina local
   Para retornar a la sesión en su computador desde la VM ejecute
@@ -174,11 +173,11 @@ Borrado de la VM
     vagrant destroy
 
 
-.. admonition:: Pregunta
+.. admonition:: **Pregunta**
 
    ¿Qué software fue instalado con Puppet?
 
-.. admonition:: Actividad
+.. admonition:: **Actividad**
 
     Realice las siguientes lecturas:
 
