@@ -86,7 +86,7 @@ de comandos haga lo siguiente:
 
 
 Encendido
-  Abra el Terminal y vaya al directorio `workdir`. Ejecute
+  Abra el Terminal y vaya hasta la carpeta donde clono este repositorio. Ejecute
 
   .. code-block:: bash
 
@@ -94,6 +94,8 @@ Encendido
 
   para enceder la VM en el background. Si la VM no ha sido creada,
   Vagrant la creara y configurará por usted.
+
+
 
 
 Apertura de una sesión
