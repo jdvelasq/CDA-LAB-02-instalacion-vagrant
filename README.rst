@@ -21,28 +21,28 @@ Paso 2
 
   .. admonition:: **Pasos exclusivos para Windows**
 
-    Paso 2.1
-      Abra la busqueda de Windows, escriba la palabra **variables** y escoja
-      la opción **Editar las variables de entorno del sistema**.
+      Paso 2.1
+        Abra la busqueda de Windows, escriba la palabra **variables** y escoja
+        la opción **Editar las variables de entorno del sistema**.
 
-    Paso 2.2
-      Haga click en la opción **Variables de entorno...** ubicada en la
-      parte inferior derecha.
+      Paso 2.2
+        Haga click en la opción **Variables de entorno...** ubicada en la
+        parte inferior derecha.
 
-    Paso 2.3
-      Una vez dentro del módulo de edición, ubique la variable **Path**
-      ubicada en la ventana **variables del sistema** en la parte inferior,
-      señalela y haga click en **Editar**.
+      Paso 2.3
+        Una vez dentro del módulo de edición, ubique la variable **Path**
+        ubicada en la ventana **variables del sistema** en la parte inferior,
+        señalela y haga click en **Editar**.
 
-    Paso 2.4
-      Verifique que en la definicion de la variable **Path**
-      aparezca la declaración
+      Paso 2.4
+        Verifique que en la definicion de la variable **Path**
+        aparezca la declaración
 
-      .. code-block:: bash
+        .. code-block:: bash
     
-         %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+           %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
 
-      Si no se encuentra incluida, haga click en **Nuevo** y agréguela.
+        Si no se encuentra incluida, haga click en **Nuevo** y agréguela.
 
 
 Paso 3
