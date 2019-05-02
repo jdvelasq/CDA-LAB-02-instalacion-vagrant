@@ -81,7 +81,7 @@ de comandos (CLI) o prompt del sistema o Terminal.
 Los siguientes son videos explicativos del encendido de la máquina:
 
 * Mac OS: https://youtu.be/RBfeiqcDcGk
-* Windows: 
+* Windows: https://youtu.be/4vvJOzFFrcQ
 
 Apertura del Terminal
   Para acceder al terminal de comandos haga lo siguiente:
