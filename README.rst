@@ -204,6 +204,8 @@ Videos explicativos
     </video>
 
 
+https://github.com/jdvelasq/CDA-instalacion-vagrant/blob/master/assets/vagrant-setup-macOS.mp4
+
 **Resumen**
 
 
