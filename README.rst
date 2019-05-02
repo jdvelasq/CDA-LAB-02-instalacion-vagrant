@@ -1,4 +1,4 @@
-LAB 02: Creación de una máquina virtual usando Vagrant
+Creación de una máquina virtual usando Vagrant
 =============================================================
 
 En esta práctica se realizará la configuración de un ambiente de
