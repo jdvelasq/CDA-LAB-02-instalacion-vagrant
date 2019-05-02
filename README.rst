@@ -197,9 +197,9 @@ Borrado de la VM
 Videos explicativos
 --------------------
 
-.. raw:: html
+.. image:: assets/vagrant-setup-macOS.mp4
+  :width: 400
 
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/6Dakd7EIgBE?rel=0" frameborder="0" allowfullscreen></iframe>
 
 **Resumen**
 
