@@ -78,6 +78,10 @@ En esta sección se describe el uso de la máquina virtual. Los comandos
 presentados a continuación se ejecutan en la interfaz de línea
 de comandos (CLI) o prompt del sistema o Terminal. 
 
+Los siguientes son videos explicativos del encendido de la máquina:
+
+* Mac OS: https://youtu.be/RBfeiqcDcGk
+* Windows: 
 
 Apertura del Terminal
   Para acceder al terminal de comandos haga lo siguiente:
@@ -194,17 +198,6 @@ Borrado de la VM
     * `Getting Started <https://www.vagrantup.com/intro/getting-started/index.html>`_.
     * `Puppet Apply Provisiner <https://www.vagrantup.com/docs/provisioning/puppet_apply.html>`_.
 
-Videos explicativos
---------------------
-
-.. raw:: html
-
-    <video width="320" height="240" controls>
-        <source src="assets/vagrant-setup-macOS.mp4" type="video/mp4">
-    </video>
-
-
-https://github.com/jdvelasq/CDA-instalacion-vagrant/blob/master/assets/vagrant-setup-macOS.mp4
 
 **Resumen**
 
