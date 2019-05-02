@@ -197,8 +197,11 @@ Borrado de la VM
 Videos explicativos
 --------------------
 
-.. image:: assets/vagrant-setup-macOS.mp4
-  :width: 400
+.. raw:: html
+
+    <video width="320" height="240" controls>
+        <source src="assets/vagrant-setup-macOS.mp4" type="video/mp4">
+    </video>
 
 
 **Resumen**
