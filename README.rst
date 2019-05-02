@@ -76,8 +76,11 @@ Encendido, apagado y borrado de la máquina virtual
 
 En esta sección se describe el uso de la máquina virtual. Los comandos 
 presentados a continuación se ejecutan en la interfaz de línea
-de comandos (CLI) o prompt del sistema o Terminal. Para acceder al terminal
-de comandos haga lo siguiente:
+de comandos (CLI) o prompt del sistema o Terminal. 
+
+
+Apertura del Terminal
+  Para acceder al terminal de comandos haga lo siguiente:
 
 * En Mac OS X, digite `Cmd + Space` para acceder a Spotligth, digite
   `terminal` y finalmente `Enter`.
