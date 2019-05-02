@@ -194,6 +194,13 @@ Borrado de la VM
     * `Getting Started <https://www.vagrantup.com/intro/getting-started/index.html>`_.
     * `Puppet Apply Provisiner <https://www.vagrantup.com/docs/provisioning/puppet_apply.html>`_.
 
+Videos explicativos
+--------------------
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/6Dakd7EIgBE?rel=0" frameborder="0" allowfullscreen></iframe>
+
 **Resumen**
 
 
