@@ -47,7 +47,7 @@ Paso 2
 
 Paso 3
   Haga una copia de este repositorio en su disco duro. En la página
-  principal del repositorio encontrará el botón **Clone or Download**.
+  principal del repositorio encontrará el botón **Clone or download**.
   Renombre la carpeta. Esta será su carpeta de trabajo.
 
   .. image:: assets/fig-01.jpg
