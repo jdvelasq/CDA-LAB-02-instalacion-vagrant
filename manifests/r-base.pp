@@ -23,6 +23,7 @@ file { '/home/vagrant/IRscript':
 
 exec { 'irkernel':
     command => '/usr/bin/Rscript /home/vagrant/IRscript && /bin/rm /home/vagrant/IRscript',
+    timeout => 0,
     user    => 'root',
     onlyif  => '/usr/bin/test ! -d /usr/local/share/jupyter/kernels/ir'
 }
