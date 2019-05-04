@@ -3,7 +3,7 @@ package {['mysql-server']:
 }
 
 package {['ipython-sql',
-          'pymysql'
+          'pymysql',
           'SQLAlchemy']:
     ensure   => present,
     provider => 'pip3',
