@@ -216,17 +216,9 @@ Borrado de la VM
     vagrant destroy
 
 
-.. admonition:: **Pregunta**
 
-   ¿Qué software fue instalado con Puppet?
 
-.. admonition:: **Actividad**
 
-    Realice las siguientes lecturas:
-
-    * `What is Vagrant? <https://www.vagrantup.com/intro/index.html>`_
-    * `Getting Started <https://www.vagrantup.com/intro/getting-started/index.html>`_.
-    * `Puppet Apply Provisiner <https://www.vagrantup.com/docs/provisioning/puppet_apply.html>`_.
 
 
 **Resumen**
@@ -248,3 +240,12 @@ Borrado de la VM
 
   ## Cerrar la sesión en la VM
   exit
+
+
+**Material complementario**
+
+* `What is Vagrant? <https://www.vagrantup.com/intro/index.html>`_
+
+* `Getting Started <https://www.vagrantup.com/intro/getting-started/index.html>`_.
+
+* `Puppet Apply Provisiner <https://www.vagrantup.com/docs/provisioning/puppet_apply.html>`_.
