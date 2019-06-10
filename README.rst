@@ -4,34 +4,10 @@ Creación de la máquina virtual usando Vagrant
 En esta práctica se realizará la configuración de un ambiente de
 programación portable que garantice una ejecución idéntica en todos los
 computadores independientemente del tipo de sistema operativo y su versión.
-
-La práctica considerada contiene dos entornos, dependiendo de las asignaturas:
-
-  * Ciencia de los Datos y Analítica Predictiva.
-  
-  * Analítica de Grandes Datos.
     
 **Advertencia**. Este laboratorio debe ser realizado por fuera del campus
 de la Universidad, ya que el proxy bloquea algunos de los sitios requeridos 
 para la instalación de la máquina virtual.
-
-Preparación de los archivos para realizar la configuración
-------------------------------------------------------------------
-
-Eete procedimiento debe ser realizado antes del paso 5.
-Si esta viendo las asignaturas Ciencia de los Datos o Analítica Predictiva,
-comente el siguiente fragmento de código en el archivo Vagrantfile, líneas
-68 a 71.
-
-.. code::
-
-  config.vm.provision "puppet" do |puppet|
-     puppet.manifests_path = 'manifests'
-    puppet.manifest_file = 'hadoop-aws.pp'
-  end
-  
-Si está cursando la asignatura Analítica de Grandes Datos, verifique que el
-fragmento de código anterior no este comentado.
   
 
 Creación de la máquina virtual
@@ -42,32 +18,30 @@ Paso 1
 
 Paso 2
   Descargue e instale `Vagrant <https://www.vagrantup.com/downloads.html>`_.
-
   Pasos exclusivos para Microsoft Windows:
 
-      Paso 2.1
-        Abra la busqueda de Windows, escriba la palabra **variables** y escoja
-        la opción **Editar las variables de entorno del sistema**.
+  Paso 2.1
+     Abra la busqueda de Windows, escriba la palabra **variables** y escoja
+     la opción **Editar las variables de entorno del sistema**.
 
-      Paso 2.2
-        Haga click en la opción **Variables de entorno...** ubicada en la
-        parte inferior derecha.
+  Paso 2.2
+     Haga click en la opción **Variables de entorno...** ubicada en la
+     parte inferior derecha.
 
-      Paso 2.3
-        Una vez dentro del módulo de edición, ubique la variable **Path**
-        ubicada en la ventana **variables del sistema** en la parte inferior,
-        señalela y haga click en **Editar**.
+  Paso 2.3
+     Una vez dentro del módulo de edición, ubique la variable **Path**
+     ubicada en la ventana **variables del sistema** en la parte inferior,
+     señalela y haga click en **Editar**.
 
-      Paso 2.4
-        Verifique que en la definicion de la variable **Path**
-        aparezca la declaración
+   Paso 2.4
+     Verifique que en la definicion de la variable **Path**
+     aparezca la declaración
 
-        .. code-block:: bash
+     .. code-block:: bash
     
-           %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+        %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
 
-        Si no se encuentra incluida, haga click en **Nuevo** y agréguela.
-
+     Si no se encuentra incluida, haga click en **Nuevo** y agréguela.
 
 Paso 3
   Haga una copia de este repositorio en su disco duro. En la página
@@ -79,7 +53,9 @@ Paso 3
     :alt: Alternative text
 
 Paso 4
-  Pasos exclusivos para Microsoft Windows:
+  Habra el Terminal y vaya a la carpeta que contiene la copia de este repositorio.
+
+  **En Microsoft Windows:**
 
     Paso 4.1
       Digite la tecla de windows + x. Luego escoja la opción **Aplicaciones y características**.
@@ -92,7 +68,29 @@ Paso 4
       parte superior izquierda, busque en la lista la aplicación **Hyper V** y desmárquela.
 
 Paso 5
+  Prepare el archivo `Vagrantfile`. Si esta viendo las asignaturas Ciencia de los Datos 
+  o Analítica Predictiva, comente el siguiente fragmento de código en el archivo 
+  Vagrantfile, líneas 68 a 71.
+
+  .. code::
+
+     config.vm.provision "puppet" do |puppet|
+       puppet.manifests_path = 'manifests'
+       puppet.manifest_file = 'hadoop-aws.pp'
+     end
+  
+  Si está cursando la asignatura Analítica de Grandes Datos, verifique que el
+  fragmento de código anterior no este comentado.
+
+
+Paso 6
   Proceda con el encendido de la máquina de acuerdo a su sistema operativo.
+
+
+
+
+
+
 
 
 Encendido, apagado y borrado de la máquina virtual
