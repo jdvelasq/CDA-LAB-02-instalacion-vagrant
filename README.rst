@@ -238,7 +238,8 @@ MySQL
   MySQL 5.7. Para tener acceso al shell interactivo digite:
   
   .. code-block::
-     sudo mysql
+     
+    sudo mysql
 
 OpenRefine
   http::wwww.openrefine.org y https://github.com/OpenRefine/OpenRefine
