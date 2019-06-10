@@ -300,6 +300,41 @@ exec { 'tensorflow-R':
 
 
 
+  #
+  # exec { 'julia-download':
+  #   command => '/usr/bin/wget -P /vagrant/resources/ https://julialang-s3.julialang.org/bin/linux/x64/1.1/julia-1.1.0-linux-x86_64.tar.gz',
+  #   timeout => 0,
+  #   onlyif  => '/usr/bin/test ! -f /vagrant/resources/julia-1.1.0-linux-x86_64.tar.gz'
+  # }
+  # 
+  # exec { 'julia-mv':
+  #   command => '/bin/tar -xzf /vagrant/resources/julia-1.1.0-linux-x86_64.tar.gz && /bin/mv julia-1.1.0 /usr/local/julia-1.1.0', 
+  #   timeout => 0,
+  #   onlyif  => '/usr/bin/test ! -d /usr/local/julia-1.1.0'
+  # }
+  #
+  # file { '/home/vagrant/ijulia.jl':
+  #   content => 'using Pkg
+  #   Pkg.add("IJulia")'
+  # }
+  # 
+  # exec { 'ijulia-kernel':
+  #    command => '/usr/bin/sudo /usr/local/julia-1.1.0/bin/julia ijulia.jl',
+  #    timeout => 0,
+  #    onlyif  => '/usr/bin/test ! -d /home/vagrant/.local/share/jupyter/kernels/julia-1.1'
+  # }
+  #
+  #
+  # package {['ruby-full']:
+  #   ensure => present,
+  # }
+  # 
+  # exec { 'ruby-kernel':,
+  #    command => '/usr/bin/sudo /usr/bin/gem install cztop iruby && iruby register --force',
+  #    user    => 'root',
+  #    onlyif  => '/usr/bin/test ! -d /home/vagrant/.ipython/kernels/ruby'
+  # }
+  #
 
 
 
