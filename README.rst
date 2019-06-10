@@ -171,7 +171,7 @@ Apertura de una sesión
 
   En este prompt, usted podrá ejecutar comandos de Unix dentro de la VM.
 
-Carpeta compartida
+Acceso a la carpeta compartida
   Para ir a la carpeta compartida entre la VM y su sistema
   operativo, ejecute
 
@@ -216,13 +216,52 @@ Borrado de la VM
     vagrant destroy
 
 
+Software instalado y configuración
+========================================
+
+
+Jupyter notebook 
+  .. code-block::
+  
+    jupyter notebook -ip=0.0.0.0
+    
+  Abra el navegador en http://127.0.0.1:8888/......  
+  
+Jupyter lab
+  .. code-block::
+  
+    jupyter lab -ip=0.0.0.0
+ 
+  Abra el navegador en http://127.0.0.1:8888/......
+
+MySQL
+  MySQL 5.7. Para tener acceso al shell interactivo digite:
+  
+  .. code-block::
+     sudo mysql
+
+OpenRefine
+  wwww.openrefine.org
+  
+  .. code-block::
+    
+     ./refine  
+     
+  Abra su navegador en http://127.0.0.1:3333/
+     
+Superset (Apache)
+  Software para visualización e inteligencia de negocios
+  
+  .. code-block::
+  superset -i 3088
+  
+  Abra su navegador en http://127.0.0.1:3088/
 
 
 
 
-
-**Resumen**
-
+Resumen
+========================================
 
 .. code-block:: bash
 
@@ -242,7 +281,8 @@ Borrado de la VM
   exit
 
 
-**Material complementario**
+Material complementario
+========================================
 
 * `What is Vagrant? <https://www.vagrantup.com/intro/index.html>`_
 
