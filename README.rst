@@ -241,16 +241,16 @@ MySQL
      sudo mysql
 
 OpenRefine
-  wwww.openrefine.org
+  http::wwww.openrefine.org y https://github.com/OpenRefine/OpenRefine
   
   .. code-block::
     
-     ./refine  
+     refine -i 0.0.0.0  
      
   Abra su navegador en http://127.0.0.1:3333/
      
 Superset (Apache)
-  Software para visualización e inteligencia de negocios
+  Software para visualización e inteligencia de negocios.
   
   .. code-block::
   superset -i 3088
