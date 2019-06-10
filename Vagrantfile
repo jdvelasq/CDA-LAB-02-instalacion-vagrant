@@ -50,132 +50,15 @@ Vagrant.configure("2") do |config|
   ## Superset 
   config.vm.network :forwarded_port, guest: 3088,   host: 3088,  host_ip: "127.0.0.1"  # Supeset - http://127.0.0.1:3088/
 
-
-
+  ##
+  ## 
+  ## Ciencia de los Datos y Analítica Predictiva
+  ##
+  ##
   config.vm.provision "puppet" do |puppet|
     puppet.manifests_path = 'manifests'
     puppet.manifest_file = 'data-science.pp'
   end
-
-  ##
-  ##
-  ## nodejs
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'nodejs.pp'
-  #end
-
-  ##
-  ##
-  ##  Jupyter
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'jupyter.pp'
-  #end
-
-  ##
-  ##
-  ##  Sphinx
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'sphinx.pp'
-  #end
-
-  
-  
-
-  ##
-  ##
-  ##  Python for Data Science
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'python-data-science.pp'
-  #end
-
-  
-
-
-  ##
-  ##
-  ##  R & IRkernel
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'r-base.pp'
-  #end
-
-  ##
-  ##
-  ##  Bash kernel
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'bash.pp'
-  #end
-
-  ##
-  ##
-  ##  Jupyter Ruby kernel
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'iruby.pp'
-  #end
-
-
-  ##
-  ##
-  ## Julia Language
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'ijulia.pp'
-  #end
-
-  ##
-  ##
-  ##  MySQL
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'mysql.pp'
-  #end
-
-  ##
-  ##
-  ##  Machine Learning
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'machine-learning.pp'
-  #end
-
-
-
-
-  ##
-  ##
-  ##  TensorFlow en R
-  ##
-  ##
-  #config.vm.provision "puppet" do |puppet|
-  #  puppet.manifests_path = 'manifests'
-  #  puppet.manifest_file = 'tensorflow-r.pp'
-  #end
 
   ##
   ##
@@ -186,43 +69,5 @@ Vagrant.configure("2") do |config|
     puppet.manifests_path = 'manifests'
     puppet.manifest_file = 'hadoop-aws.pp'
   end
-
-
-  #
-  # exec { 'julia-download':
-  #   command => '/usr/bin/wget -P /vagrant/resources/ https://julialang-s3.julialang.org/bin/linux/x64/1.1/julia-1.1.0-linux-x86_64.tar.gz',
-  #   timeout => 0,
-  #   onlyif  => '/usr/bin/test ! -f /vagrant/resources/julia-1.1.0-linux-x86_64.tar.gz'
-  # }
-  # 
-  # exec { 'julia-mv':
-  #   command => '/bin/tar -xzf /vagrant/resources/julia-1.1.0-linux-x86_64.tar.gz && /bin/mv julia-1.1.0 /usr/local/julia-1.1.0', 
-  #   timeout => 0,
-  #   onlyif  => '/usr/bin/test ! -d /usr/local/julia-1.1.0'
-  # }
-  #
-  # file { '/home/vagrant/ijulia.jl':
-  #   content => 'using Pkg
-  #   Pkg.add("IJulia")'
-  # }
-  # 
-  # exec { 'ijulia-kernel':
-  #    command => '/usr/bin/sudo /usr/local/julia-1.1.0/bin/julia ijulia.jl',
-  #    timeout => 0,
-  #    onlyif  => '/usr/bin/test ! -d /home/vagrant/.local/share/jupyter/kernels/julia-1.1'
-  # }
-  #
-  #
-  # package {['ruby-full']:
-  #   ensure => present,
-  # }
-  # 
-  # exec { 'ruby-kernel':,
-  #    command => '/usr/bin/sudo /usr/bin/gem install cztop iruby && iruby register --force',
-  #    user    => 'root',
-  #    onlyif  => '/usr/bin/test ! -d /home/vagrant/.ipython/kernels/ruby'
-  # }
-  #
-
 
 end
