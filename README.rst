@@ -33,7 +33,7 @@ Paso 2
      ubicada en la ventana **variables del sistema** en la parte inferior,
      señalela y haga click en **Editar**.
 
-   Paso 2.4
+  Paso 2.4
      Verifique que en la definicion de la variable **Path**
      aparezca la declaración
 
@@ -55,18 +55,6 @@ Paso 3
 Paso 4
   Habra el Terminal y vaya a la carpeta que contiene la copia de este repositorio.
 
-  **En Microsoft Windows:**
-
-    Paso 4.1
-      Digite la tecla de windows + x. Luego escoja la opción **Aplicaciones y características**.
-
-    Paso 4.2
-      En el costado superior derecho, escoja la opción **Programas y características**. Se abrirá una nueva ventana emergente.
-
-    Paso 4.3
-      Haga click en la opción **Activar o Desactivar las características de Windows** ubicada en la 
-      parte superior izquierda, busque en la lista la aplicación **Hyper V** y desmárquela.
-
 Paso 5
   Prepare el archivo `Vagrantfile`. Si esta viendo las asignaturas Ciencia de los Datos 
   o Analítica Predictiva, comente el siguiente fragmento de código en el archivo 
@@ -87,14 +75,34 @@ Paso 6
   Proceda con el encendido de la máquina de acuerdo a su sistema operativo.
 
 
+Solución de problemas
+===============================================================
+
+**1. Mi computador reporta que el Bios no permite activar la multitarea.**
+
+Entre al Bios de su máquina y haga los cambios necesarios. Busque en Google el tipo particular de problema.
 
 
+**2. Windows no permite activar la multitarea (Hyper V)**.
+
+Realice el siguiente procedimiento:
+
+
+    Paso a)
+      Digite la tecla de windows + x. Luego escoja la opción **Aplicaciones y características**.
+
+    Paso b)
+      En el costado superior derecho, escoja la opción **Programas y características**. Se abrirá una nueva ventana emergente.
+
+    Paso c)
+      Haga click en la opción **Activar o Desactivar las características de Windows** ubicada en la 
+      parte superior izquierda, busque en la lista la aplicación **Hyper V** y desmárquela.
 
 
 
 
 Encendido, apagado y borrado de la máquina virtual
---------------------------------------------------
+===================================================================================================
 
 En esta sección se describe el uso de la máquina virtual. Los comandos 
 presentados a continuación se ejecutan en la interfaz de línea
