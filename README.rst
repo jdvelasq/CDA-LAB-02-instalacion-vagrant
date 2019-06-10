@@ -1,16 +1,40 @@
-Creación de una máquina virtual usando Vagrant
+Creación de la máquina virtual usando Vagrant
 =============================================================
 
 En esta práctica se realizará la configuración de un ambiente de
 programación portable que garantice una ejecución idéntica en todos los
 computadores independientemente del tipo de sistema operativo y su versión.
 
+La práctica considerada contiene dos entornos, dependiendo de las asignaturas:
+
+  * Ciencia de los Datos y Analítica Predictiva.
+  
+  * Analítica de Grandes Datos.
+    
 **Advertencia**. Este laboratorio debe ser realizado por fuera del campus
 de la Universidad, ya que el proxy bloquea algunos de los sitios requeridos 
 para la instalación de la máquina virtual.
 
+Preparación de los archivos para realizar la configuración
+------------------------------------------------------------------
 
-Configuración
+Eete procedimiento debe ser realizado antes del paso 5.
+Si esta viendo las asignaturas Ciencia de los Datos o Analítica Predictiva,
+comente el siguiente fragmento de código en el archivo Vagrantfile, líneas
+68 a 71.
+
+.. code::
+
+  config.vm.provision "puppet" do |puppet|
+     puppet.manifests_path = 'manifests'
+    puppet.manifest_file = 'hadoop-aws.pp'
+  end
+  
+Si está cursando la asignatura Analítica de Grandes Datos, verifique que el
+fragmento de código anterior no este comentado.
+  
+
+Creación de la máquina virtual
 -------------
 
 Paso 1
