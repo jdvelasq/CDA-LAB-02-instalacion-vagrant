@@ -133,8 +133,6 @@ Encendido
   Vagrant la creara y configurará por usted.
 
 
-
-
 Apertura de una sesión
   Después de encender la VM,  conéctese a ella con
 
@@ -251,7 +249,7 @@ OpenRefine
   Abra su navegador en http://127.0.0.1:3333/
      
 Superset (Apache)
-  Software para visualización e inteligencia de negocios.
+  Software para visualización e inteligencia de negocios. 
   
   .. code-block::
   superset -i 3088
