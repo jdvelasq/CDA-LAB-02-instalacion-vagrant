@@ -127,6 +127,12 @@ package {[
     'scikit-learn',
     'statsmodels',
     'matplotlib',
+    'seaborn',
+    'altair',
+    'vega_datasets',
+    'vega',
+    'tzlocal',
+    'wordcloud',
     'rpy2',
     #
     # Redes neuronales
@@ -139,6 +145,39 @@ package {[
 ensure   => present,
     provider => 'pip3',
 }
+
+##
+## 
+##  Cartopy & GeoPandas
+##
+##
+package {[
+    #
+    # Sistema
+    #
+    'libproj-dev',
+    'proj-data',
+    'proj-bin',
+    'libgeos-dev',
+    'libgeos-c1v5'
+    ]:
+ensure => present,
+}
+
+
+package {[
+    'six',
+    'pyshp',
+    'shapely',
+    'Cython',
+    'cartopy',
+    'geopandas',
+    'geoplot'
+    ]:
+ensure   => present,
+    provider => 'pip3',
+}
+
 
 
 ##
