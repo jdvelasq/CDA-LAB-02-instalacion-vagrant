@@ -31,10 +31,10 @@
 ## node.js
 ##
 ##
-#exec { 'nodejs-repo':
-#command => '/usr/bin/curl -sL https://deb.nodesource.com/setup_11.x | /usr/bin/sudo /bin/bash -',
-#timeout => 0,
-#}
+exec { 'nodejs-repo':
+command => '/usr/bin/curl -sL https://deb.nodesource.com/setup_11.x | /usr/bin/sudo /bin/bash -',
+timeout => 0,
+}
 
 ##
 ##
