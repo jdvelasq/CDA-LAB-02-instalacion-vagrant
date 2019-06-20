@@ -13,17 +13,17 @@
 ##  OpenRefine
 ##
 ##
-exec { 'openrefine-download':
-    command => '/usr/bin/wget -P /vagrant/resources/ https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-linux-3.1.tar.gz',
-    timeout => 0,
-    onlyif  => '/usr/bin/test ! -f /vagrant/resources/openrefine-linux-3.1.tar.gz'
-}
+#exec { 'openrefine-download':
+#    command => '/usr/bin/wget -P /vagrant/resources/ https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-linux-3.1.tar.gz',
+#    timeout => 0,
+#    onlyif  => '/usr/bin/test ! -f /vagrant/resources/openrefine-linux-3.1.tar.gz'
+#}
 
-exec { 'openrefine-mv':
-    command => '/bin/tar -xzf /vagrant/resources/openrefine-linux-3.1.tar.gz && /bin/mv openrefine-3.1 /usr/local/openrefine-3.1', 
-    timeout => 0,
-    onlyif  => '/usr/bin/test ! -d /usr/local/openrefine-3.1' 
-}
+#exec { 'openrefine-mv':
+#    command => '/bin/tar -xzf /vagrant/resources/openrefine-linux-3.1.tar.gz && /bin/mv openrefine-3.1 /usr/local/openrefine-3.1', 
+#    timeout => 0,
+#    onlyif  => '/usr/bin/test ! -d /usr/local/openrefine-3.1' 
+#}
 
 
 ##
@@ -31,10 +31,10 @@ exec { 'openrefine-mv':
 ## node.js
 ##
 ##
-exec { 'nodejs-repo':
-command => '/usr/bin/curl -sL https://deb.nodesource.com/setup_11.x | /usr/bin/sudo /bin/bash -',
-timeout => 0,
-}
+#exec { 'nodejs-repo':
+#command => '/usr/bin/curl -sL https://deb.nodesource.com/setup_11.x | /usr/bin/sudo /bin/bash -',
+#timeout => 0,
+#}
 
 ##
 ##
@@ -95,9 +95,9 @@ package {[
     #
     # Sphinx
     #
-    'sphinx',
-    'sphinx_rtd_theme',
-    'nbsphinx',
+#    'sphinx',
+#    'sphinx_rtd_theme',
+#    'nbsphinx',
     #
     # SQL
     #
@@ -106,7 +106,7 @@ package {[
     #
     # Apache superset
     #
-    'superset',
+#    'superset',
     #
     # Jupyter & Jupyter Lab
     #
