@@ -1,5 +1,5 @@
 Creación de la máquina virtual usando Vagrant
-=============================================================
+===================================================================================================
 
 En esta práctica se realizará la configuración de un ambiente de
 programación portable que garantice una ejecución idéntica en todos los
@@ -11,14 +11,15 @@ para la instalación de la máquina virtual.
   
 
 Creación de la máquina virtual
--------------
+---------------------------------------------------------------------------------------------------
 
 Paso 1
   Descargue e instale `VirtualBox  <https://www.virtualbox.org/wiki/Downloads>`_.
 
 Paso 2
   Descargue e instale `Vagrant <https://www.vagrantup.com/downloads.html>`_.
-  Pasos exclusivos para Microsoft Windows:
+
+  **Pasos exclusivos para Microsoft Windows:**
 
   Paso 2.1
      Abra la busqueda de Windows, escriba la palabra **variables** y escoja
@@ -56,31 +57,16 @@ Paso 4
   Habra el Terminal y vaya a la carpeta que contiene la copia de este repositorio.
 
 Paso 5
-  Prepare el archivo `Vagrantfile`. Si esta viendo las asignaturas Ciencia de los Datos 
-  o Analítica Predictiva, comente el siguiente fragmento de código en el archivo 
-  Vagrantfile, líneas 68 a 71.
-
-  .. code::
-
-     config.vm.provision "puppet" do |puppet|
-       puppet.manifests_path = 'manifests'
-       puppet.manifest_file = 'hadoop-aws.pp'
-     end
-  
-  Si está cursando la asignatura Analítica de Grandes Datos, verifique que el
-  fragmento de código anterior no este comentado.
-
-
-Paso 6
   Proceda con el encendido de la máquina de acuerdo a su sistema operativo.
 
 
 Solución de problemas
-===============================================================
+===================================================================================================
 
 **1. Mi computador reporta que el Bios no permite activar la multitarea.**
 
-Entre al Bios de su máquina y haga los cambios necesarios. Busque en Google el tipo particular de problema.
+Entre al Bios de su máquina y haga los cambios necesarios. Busque en Google el tipo 
+particular de problema.
 
 
 **2. Windows no permite activar la multitarea (Hyper V)**.
@@ -89,16 +75,17 @@ Realice el siguiente procedimiento:
 
 
     Paso a)
-      Digite la tecla de windows + x. Luego escoja la opción **Aplicaciones y características**.
+      Digite la tecla de windows + x. Luego escoja la opción 
+      **Aplicaciones y características**.
 
     Paso b)
-      En el costado superior derecho, escoja la opción **Programas y características**. Se abrirá una nueva ventana emergente.
+      En el costado superior derecho, escoja la opción **Programas y características**. 
+      Se abrirá una nueva ventana emergente.
 
     Paso c)
-      Haga click en la opción **Activar o Desactivar las características de Windows** ubicada en la 
-      parte superior izquierda, busque en la lista la aplicación **Hyper V** y desmárquela.
-
-
+      Haga click en la opción **Activar o Desactivar las características de Windows** 
+      ubicada en la parte superior izquierda, busque en la lista la aplicación 
+      **Hyper V** y desmárquela.
 
 
 Encendido, apagado y borrado de la máquina virtual
@@ -116,10 +103,10 @@ Los siguientes son videos explicativos del encendido de la máquina:
 Apertura del Terminal
   Para acceder al terminal de comandos haga lo siguiente:
 
-* En Mac OS X, digite `Cmd + Space` para acceder a Spotligth, digite
-  `terminal` y finalmente `Enter`.
-* En Ubuntu, digite  `Ctrl + Alt + T`.
-* En Windows, abra **ejecutar** y digite `cmd`.
+  * En Mac OS X, digite `Cmd + Space` para acceder a Spotligth, digite
+    `terminal` y finalmente `Enter`.
+  * En Ubuntu, digite  `Ctrl + Alt + T`.
+  * En Windows, abra **ejecutar** y digite `cmd`.
 
 
 Encendido
@@ -215,52 +202,21 @@ Borrado de la VM
 
 
 Software instalado y configuración
-========================================
-
-
-Jupyter notebook 
-  .. code-block::
-  
-    jupyter notebook -ip=0.0.0.0
-    
-  Abra el navegador en http://127.0.0.1:8888/......  
+===================================================================================================
   
 Jupyter lab
   .. code-block::
   
-    jupyter lab -ip=0.0.0.0
+    jupyter lab
  
   Abra el navegador en http://127.0.0.1:8888/......
 
-MySQL
-  MySQL 5.7. Para tener acceso al shell interactivo digite:
-  
-  .. code-block::
-     
-    sudo mysql
-
-OpenRefine
-  http::wwww.openrefine.org y https://github.com/OpenRefine/OpenRefine
-  
-  .. code-block::
-    
-     refine -i 0.0.0.0  
-     
-  Abra su navegador en http://127.0.0.1:3333/
-     
-Superset (Apache)
-  Software para visualización e inteligencia de negocios. 
-  
-  .. code-block::
-  superset -i 3088
-  
-  Abra su navegador en http://127.0.0.1:3088/
 
 
 
 
 Resumen
-========================================
+===================================================================================================
 
 .. code-block:: bash
 
@@ -281,7 +237,7 @@ Resumen
 
 
 Material complementario
-========================================
+===================================================================================================
 
 * `What is Vagrant? <https://www.vagrantup.com/intro/index.html>`_
 
